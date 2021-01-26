@@ -1,0 +1,9 @@
+@import "vendors/normalize.css";
+
+@import "layout/navbar.css";
+
+@import "components/button.css";
+
+@import "pages/auction.css";
+@import "pages/product.css";
+@import "pages/details.css";
