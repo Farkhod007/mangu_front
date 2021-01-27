@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +6,12 @@
   border: none;
   text-decoration: none;
   box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
 }
 
+
 .btn {
-  padding: 16px 65px;
-  width: 306px;
-  height: 56px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -22,8 +23,9 @@
 }
 
 .btn-primary {
-  font-family: Manrope;
-  font-style: normal;
+  padding: 16px 65px;
+  width: 306px;
+  height: 56px;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
@@ -35,8 +37,9 @@
 }
 
 .btn-secondary {
-  font-family: Manrope;
-  font-style: normal;
+  padding: 16px 65px;
+  width: 306px;
+  height: 56px;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
@@ -46,19 +49,35 @@
   color: white;
 }
 
-.btn-prev {
-  width: 97px;
-  height: 48px;
+.btn-secondary:hover {
+  background-image: linear-gradient(88.4deg, #109e00 -0.24%, #14c700 113.01%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
 
+.btn-pign {
+  height: 48px;
+  display: inline-block;
+  padding: 12px 20px;
   background: #ffffff;
   /* Line color */
   border: 1px solid #f1f4f4;
   border-radius: 2px;
-  color: #666666;
+  transition: background .4s ease;
+}
+
+.btn-pign:hover,
+.btn-pign:focus {
+  background-color: #0c5177;
+  color: white;
 }
 
 @media screen and (max-width: 816px) {
   .btn {
     width: 302px;
   }
+  .btn-pign{
+    height: 40px;
+  }
+
 }
