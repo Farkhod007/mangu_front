@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Roboto:wght@700&display=swap');
+:root{
+font-family: "Manrope", "Roboto";
+}
+* {
+    margin: 0;
+    padding: 0;
+
+}
+/* ///////////////////////////////////////////
+/////////////////product-text starts////////
+///////////////////////////////////////// */
+
+
+.text h2{
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: #212121;
+}
+
+.text p {
+    margin-top: 8px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #212121;
+}
+
+.xarakteristika h3 {
+margin: 24px 0px 8px 0;
+font-family: Manrope;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+color: #212121;
+
+}
+
+
+.xarakteristika ul {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 20px;
+    margin-bottom: 16px;
+}
+
+.xarakteristika ul li {
+    color:  #0C5177;
+}
+
+
+.xarakteristika ul li span {
+    color: #212121;
+}
+
+.product .url a {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #14C700;
+    padding-left: 0px;
+
+}
+
+/* ///////////////////////////////////////////
+/////////////////product-text ends////////
+///////////////////////////////////////// */
