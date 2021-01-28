@@ -1,0 +1,37 @@
+.aucsion {
+    width: 370px;
+    height: 338px;
+    margin-lft: 1175px;
+    margin-tp: 192px;
+    background: linear-gradient(88.4deg, #109E00 -0.24%, #14C700 113.01%);
+    box-shadow: 0px 9px 46px rgba(54, 54, 54, 0.06), 0px 1px 11px rgba(52, 52, 52, 0.06);
+    border-radius: 8px;
+}
+
+.text-2 {
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 600;
+    width: 138px;
+    height: 16px;
+    color: #ffffff;
+}
+
+.text {
+    margin-left: 32px;
+    padding-top: 32px;
+    width: 138px;
+    height: 16px;
+}
+
+.text-1 {
+    width: 74px;
+    height: 16px;
+    margin-left: 146px;
+    padding-top: 32px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
