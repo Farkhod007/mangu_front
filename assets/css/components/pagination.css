@@ -1,4 +1,4 @@
-.pign-block{
+.pagin-block{
 height: 68px;
 width: 378px;
 border-radius: 4px;
@@ -8,14 +8,14 @@ align-items: center;
 justify-content: start;
 
 }
-.btn-pign{
+.btn-pagin{
     margin-right: 16px;
 }
-.btn-pign:last-child{
+.btn-pagin:last-child{
     margin-right: 0;
 }
 @media screen and (max-width:816px){
-    .pign-block{
+    .pagin-block{
         width: 350px;
         height: auto;
         padding: 0;
