@@ -30,7 +30,7 @@
   }
   @media (max-width: 816px) {
     .product-card{
-        width:350px;
+        width:auto;
     }
     .product-card ul{
         display: grid;
