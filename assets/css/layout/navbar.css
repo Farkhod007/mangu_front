@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Roboto:wght@700&display=swap');
+
 :root {
-    font-family:"Manrope","Roboto";
+    font-family: "Manrope", "Roboto";
 }
 
+/*nav starts*/
 nav {
     background: rgba(33, 33, 33, 1);
     height: 56px;
@@ -14,20 +16,31 @@ nav .img1 {
     height: 24px;
     position: absolute;
     top: 16px;
-    left: 180px;
+    left: 375px;
 }
 
 nav ul {
     float: right;
     margin: 0;
     padding: 0;
-    margin-right: 50px;
+    margin-right: 385px;
     list-style-type: none;
 }
 
 nav ul .nav-li {
     display: inline-block;
     margin: 20px 32px;
+}
+
+nav ul .active a {
+    color: rgba(20, 199, 0, 1);
+}
+
+nav ul .active {
+    border-bottom: 4px solid rgba(20, 199, 0, 1);
+    border-radius: 8px 8px 0px 0px;
+    color: rgba(20, 199, 0, 1);
+    padding-bottom: 13px;
 }
 
 nav ul .nav-li:last-child {
@@ -72,9 +85,28 @@ label #cancel {
     display: none;
 }
 
+/* nav ends */
+
+
+
+
+/*medi stats*/
+@media (max-width: 1400px) {
+    nav .img1 {
+        position: absolute;
+        top: 16px;
+        left: 180px;
+    }
+
+    nav ul {
+        float: right;
+        margin-right: 60px;
+    }
+}
+
 @media (max-width: 1118px) {
     nav .img1 {
-        left: 8%;
+        left: 92px;
     }
 }
 
@@ -97,6 +129,11 @@ label #cancel {
 }
 
 @media (max-width: 860px) {
+    nav .img1 {
+        left: 32px;
+        top: 16px;
+        width: auto;
+    }
     nav {
         list-style-type: none;
         margin: 0;
@@ -140,6 +177,13 @@ label #cancel {
         margin: 0;
     }
 
+    nav ul .active {
+        border-bottom: none;
+        border-radius: 8px 8px 0px 0px;
+        color: rgba(20, 199, 0, 1);
+        padding-bottom: 13px;
+    }
+
     nav ul .nav-li:last-child {
         margin: 0;
         display: inline-block !important;
@@ -150,7 +194,6 @@ label #cancel {
         margin: 0;
         padding: 0;
         padding-right: 24.4px;
-
     }
 
     label .btn {
@@ -179,3 +222,5 @@ label #cancel {
         display: block;
     }
 }
+
+/*media ends*/
