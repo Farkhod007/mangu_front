@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&family=Roboto:ital,wght@0,300;1,700&display=swap');
+:root {
+    "Monrope",
+    "Roboto"
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.green-box {
+    width: 370px;
+    height: 338px;
+    background: linear-gradient(88.4deg, #109E00 -0.24%, #14C700 113.01%);
+    border-radius: 8px;
+    padding: 32px;
+}
+
+.first {}
+
+.first .second {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #ffffff;
+}
+
+.price {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    margin-left: 8px;
+}
+
+.thirt {
+    display: flex;
+    margin-top: 16px;
+    margin-left: 7px;
+}
+
+.fourth {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 66px;
+    color: #ffffff;
+    left: 64px;
+    margin-left: 15px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
+.thirt img {
+    display: block;
+}
+
+.first hr {
+    mix-blend-mode: overlay;
+    opacity: 0.2;
+    margin-top: 16px;
+    color: #ffffff;
+    height: 1px;
+}
+
+.sixth {}
+
+.seventh {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.sixth h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.sixth h3 span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.sixth p {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.green-box button {
+    width: 306px;
+    height: 56px;
+    color: #14C700;
+    padding: 16px 65px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin-top: 24px;
+    border: none;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
