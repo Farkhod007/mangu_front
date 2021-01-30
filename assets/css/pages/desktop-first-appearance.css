@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Roboto:wght@300;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+
+:root {
+  font-family: "Manrope", "Roboto";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+/*/////////////////////////////////////
+  /////Product-week start
+  /////////////////////////////////////*/
+
+.product-week .product-info {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 40px;
+}
+
+.product-week .title h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    color: #212121;
+  }
+/*///////////////////////////////
+//////// Prod start
+//////////////////////////////*/
+.prod {
+  display: flex;
+}
+.prod .item-1 img {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.item-1 .active {
+  border: 1px solid #a3a3a3;
+  width: 48px;
+  height: 48px;
+}
+.prod .item-2 {
+  margin-left: 8px;
+}
+@media (max-width: 816px) {
+  .prod {
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+  .item-1 {
+    margin: auto;
+    grid-row: 2 / 3;
+  }
+  .prod .item-1 img {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: inline;
+  }
+  .item-1 .active {
+    border: 1px solid #a3a3a3;
+    width: 48px;
+    height: 48px;
+  }
+  .prod .item-2 {
+    margin: auto;
+    grid-row: 1 / 1;
+  }
+}
+/*///////////////////////////////
+  //////// Prod start
+  //////////////////////////////*/
+
+/* ///////////////////////////////////////////
+/////////////////product-text starts////////
+///////////////////////////////////////// */
+
+.text h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  color: #212121;
+}
+
+.text p {
+  margin-top: 8px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #212121;
+}
+
+.xarakteristika h3 {
+  margin: 24px 0px 8px 0;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212121;
+}
+
+.xarakteristika ul {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.xarakteristika ul li {
+  color: #0c5177;
+  list-style-type: disc;
+}
+
+.xarakteristika ul li span {
+  color: #212121;
+}
+
+.product .url a {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #14c700;
+  padding-left: 0px;
+}
+
+/* ///////////////////////////////////////////
+/////////////////product-text ends////////
+///////////////////////////////////////// */
+
+/*/////////////////////////////////
+  //////////green-box start 
+  ////////////////////////////////*/
+
+              
+ .green-box {
+   width: 370px;
+                  background: linear-gradient(88.4deg, #109E00 -0.24%, #14C700 113.01%);
+                  border-radius: 8px;
+                  padding: 32px;
+              }
+              
+          
+              
+              .green-box .first .second {
+                  font-family: "Manrope";
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 12px;
+                  line-height: 16px;
+                  color: #ffffff;
+              }
+              
+              .green-box .price {
+                  font-family: Manrope;
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 14px;
+                  line-height: 16px;
+                  color: #ffffff;
+                  margin-left: 8px;
+              }
+              
+              .green-box .thirt {
+                  display: flex;
+                  margin-top: 16px;
+                  margin-left: 7px;
+              }
+              
+              .green-box .fourth {
+                  font-family: Roboto;
+                  font-style: normal;
+                  font-weight: 300;
+                  font-size: 56px;
+                  line-height: 66px;
+                  color: #ffffff;
+                  left: 96px;
+                  margin-left: 15px;
+                  letter-spacing: 0.2px;
+                  text-transform: uppercase;
+              }
+              
+              .green-box .thirt img {
+                  display: block;
+                  left: 12.5%;
+                  right: 12.5%;
+                  top: 8.12%;
+                  bottom: 8.33%;
+              }
+              
+              .green-box .first hr {
+                  mix-blend-mode: overlay;
+                  opacity: 0.2;
+                  margin-top: 16px;
+                  color: #ffffff;
+                  height: 1px;
+              }
+              
+              .green-box .sixth {}
+              
+              .green-box .seventh {
+                  display: flex;
+                  justify-content: space-between;
+                  margin-top: 24px;
+              }
+              
+              .green-box .sixth h3 {
+                  font-family: Roboto;
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 28px;
+                  line-height: 32px;
+                  color: #FFFFFF;
+              }
+              
+              .green-box .sixth span {
+                  font-family: Roboto;
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 12px;
+                  line-height: 32px;
+                  color: #FFFFFF;
+              }
+              
+              .green-box .sixth p {
+                  font-family: Manrope;
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 12px;
+                  line-height: 16px;
+                  color: #FFFFFF;
+              }
+              
+              .green-box button {
+                  width: 306px;
+                  color: #14C700;
+                  padding: 16px 65px;
+                  background: #FFFFFF;
+                  border-radius: 4px;
+                  margin-top: 24px;
+                  border: none;
+                  font-family: Manrope;
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 16px;
+                  line-height: 24px;
+                  letter-spacing: 0.2px;
+              }
+              
+              @media(max-width:816px) {
+                  .green-box {
+  
+                      left: 0px;
+                      padding: 24px;
+                  }
+                  .green-box .second {
+                      font-weight: 500;
+                  }
+                  .green-box .fourth {
+                      left: 64px;
+                      Size: 48px;
+                      line height: 56px;
+                  }
+                  .green-box img {
+                      left: 0.78%;
+                      right: 0.78%;
+                      top: 1.14%;
+                      bottom: 1.39%;
+                  }
+                  .green-box .sixth p {
+                      font-weight: 500;
+                  }
+                  .green-box .thirt {
+                      display: flex;
+                      margin-top: 16px;
+                      margin-left: 0px;
+                  }
+                  .green-box .sixth h3 {
+                      font-weight: 700;
+                      font-size: 18px;
+                      line-height: 16px;
+                  }
+                  .green-box .sixth span {
+                      font-style: normal;
+                      font-weight: bold;
+                      font-size: 12px;
+                      line-height: 16px;
+                  }
+                  .green-box .thirt img {
+                      display: block;
+                  }
+              }
+
+@media (max-width: 816px) {
+  .product-week {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  .product-week .product-info {
+    margin-top: 32px;
+    display: grid;
+
+    grid-template-columns: auto;
+  }
+  .product-week .product-info .item-2 {
+    margin: 0;
+  }
+  
+}
+
+/*////////////////////////////////////////
+///green box end
+///////////////////////////////////////*/
+
+/*/////////////////////////////////////
+  /////Product-week end
+  /////////////////////////////////////*/
