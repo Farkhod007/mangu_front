@@ -1,0 +1,11 @@
+.name{
+    width: 370px;
+    height: 680px;
+}
+.name p {
+    font-family: 'Manrope',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
