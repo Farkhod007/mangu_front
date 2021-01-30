@@ -315,6 +315,9 @@ section, article, main, nav, details, summary, aside, header, footer {
 a {
   text-decoration: none; }
 
+ul {
+  list-style-type: none; }
+
 .container {
   width: 100%;
   padding: 0 16px; }
@@ -332,6 +335,129 @@ a {
   .container {
     width: 1170px; } }
 
+.navbar {
+  background: #212121;
+  width: 100%; }
+  .navbar .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .navbar .logo {
+    width: 68.5px; }
+  .navbar .menu {
+    list-style-type: none;
+    display: flex;
+    gap: 32px; }
+    .navbar .menu .item {
+      padding-top: 20px;
+      padding-bottom: 20px; }
+      .navbar .menu .item a {
+        font-family: Manrope, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        color: #E0E0E0; }
+      .navbar .menu .item.active {
+        border-bottom: 2px solid #14C700; }
+        .navbar .menu .item.active a {
+          color: #14C700; }
+  .navbar label #btn,
+  .navbar label #cancel {
+    color: white;
+    width: 24px;
+    height: 16px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none; }
+  .navbar #check {
+    display: none; }
+
+@media (max-width: 1400px) {
+  .navbar .logo {
+    position: absolute;
+    top: 16px;
+    left: 180px; }
+  .navbar .menu {
+    float: right;
+    margin-right: 60px; } }
+
+@media (max-width: 1118px) {
+  .navbar .logo {
+    left: 92px; } }
+
+@media (max-width: 944px) {
+  .navbar .logo {
+    left: 32px;
+    top: 16px;
+    width: auto; }
+  .navbar .item a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: #3d3d3d;
+    letter-spacing: 0.2px; } }
+
+@media (max-width: 860px) {
+  .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0; }
+    .navbar .logo {
+      left: 32px;
+      top: 16px;
+      width: auto; }
+    .navbar label #btn {
+      display: block; }
+    .navbar label .btn {
+      display: block; }
+    .navbar label #btn, .navbar #cancel {
+      margin-top: 20px; }
+    .navbar .menu {
+      position: fixed;
+      width: 100%;
+      height: 532px;
+      background: white;
+      top: 56px;
+      left: -100%;
+      text-align: right;
+      transition: all .5s; }
+      .navbar .menu .item {
+        display: block !important;
+        line-height: 30px;
+        padding-right: 32px;
+        margin: 0; }
+        .navbar .menu .item:nth-child(1) {
+          padding-top: 96px; }
+        .navbar .menu .item:last-child {
+          margin: 0;
+          display: inline-block !important; }
+        .navbar .menu .item:nth-child(5) {
+          display: inline-block !important;
+          margin: 0;
+          padding: 0;
+          padding-right: 24.4px; }
+        .navbar .menu .item a {
+          font-size: 20px; }
+      .navbar .menu .active {
+        border-bottom: none;
+        border-radius: 8px 8px 0px 0px;
+        color: #14c700;
+        padding-bottom: 13px; }
+    .navbar #check:checked ~ ul {
+      left: 0; }
+    .navbar #check:checked ~ label #btn {
+      display: none; }
+    .navbar #check:checked ~ label #cancel {
+      display: block; } }
+
 .btn {
   white-space: nowrap;
   display: inline-block;
@@ -342,7 +468,8 @@ a {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.2px; }
+  letter-spacing: 0.2px;
+  border: none; }
 
 .d-block {
   display: block; }
@@ -371,6 +498,193 @@ a {
   background-color: #0c5177;
   color: white; }
 
+.product-image {
+  display: grid;
+  grid-template-columns: 55px 306px;
+  grid-column-gap: 9px; }
+  .product-image .big-image {
+    display: block;
+    width: 306px;
+    height: 308px;
+    overflow: hidden; }
+    .product-image .big-image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center; }
+  .product-image .thumbnails {
+    width: 55px;
+    height: 308px;
+    overflow: hidden; }
+    .product-image .thumbnails .thumbnail {
+      display: block;
+      width: 55px;
+      height: 55px;
+      object-fit: cover;
+      object-position: center;
+      overflow: hidden;
+      opacity: 0.6;
+      border: 1px solid #F1F4F4;
+      border-radius: 2px;
+      margin-bottom: 8px;
+      cursor: pointer; }
+      .product-image .thumbnails .thumbnail.active {
+        opacity: 1;
+        border: 1px solid #CCCCCC; }
+      .product-image .thumbnails .thumbnail:hover {
+        opacity: 1;
+        border: 1px solid #CCCCCC; }
+      .product-image .thumbnails .thumbnail:last-child {
+        margin-bottom: 0; }
+
+.auction-product-details .title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  color: #212121; }
+
+.auction-product-details .excerpt {
+  margin-top: 8px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #212121; }
+
+.auction-product-details .features .title {
+  margin: 24px 0px 8px 0;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212121; }
+
+.auction-product-details .features .list {
+  margin-left: 16px; }
+  .auction-product-details .features .list .item {
+    position: relative;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: #212121; }
+    .auction-product-details .features .list .item::before {
+      position: absolute;
+      content: "";
+      background-color: #0C5177;
+      border-radius: 50%;
+      width: 4px;
+      height: 4px;
+      left: -16px;
+      top: 50%;
+      transform: translateY(-50%); }
+
+.auction-product-details .action {
+  display: block;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: #14C700;
+  margin-top: 16px; }
+
+.auction-form .title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 16px; }
+
+.auction-form table {
+  width: 100%;
+  max-width: 576px;
+  border-collapse: collapse; }
+  .auction-form table td, .auction-form table th {
+    border-bottom: 1px solid #f1f4f4;
+    padding: 24px 0px; }
+  .auction-form table tr:last-child td, .auction-form table tr:last-child th {
+    border-bottom-color: transparent; }
+  .auction-form table th {
+    text-align: left;
+    font-family: Manrope, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #525252; }
+  .auction-form table td {
+    text-align: left;
+    font-family: Manrope, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #212121; }
+
+.auction-form form {
+  color: unset; }
+  .auction-form form .price {
+    display: block;
+    width: 100%;
+    max-width: 463px;
+    padding: 24px;
+    font-family: Manrope, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #B8B8B8;
+    border: 1px solid #A3A3A3;
+    border-radius: 4px;
+    margin-top: 16px; }
+  .auction-form form .price {
+    font-family: Manrope, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #b8b8b8;
+    padding: 24px; }
+  .auction-form form .checkbox {
+    border: 1px solid #a3a3a3;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 16px;
+    height: 16px;
+    margin-top: 20px;
+    margin-bottom: 36px;
+    margin-right: 8px; }
+  .auction-form form label {
+    font-family: Manrope, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #3d3d3d; }
+    .auction-form form label a {
+      color: #109e00;
+      margin-bottom: 32px; }
+  .auction-form form .btn-primary {
+    width: 100%;
+    max-width: 306px; }
+
 .pagination {
   border-radius: 4px;
   padding: 10px;
@@ -385,6 +699,145 @@ a {
     height: auto;
     padding: 0; } }
 
+.product-info {
+  margin-left: 81px; }
+
+.product-info .name h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: #212121;
+  letter-spacing: 0.2px; }
+
+.product-info .detail p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #3d3d3d;
+  margin-top: 16px;
+  margin-bottom: 24px; }
+
+.product-info hr {
+  color: #f1f4f4;
+  width: 306px;
+  margin-left: 0px; }
+
+.product-info .o-price {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #3d3d3d;
+  margin-top: 24px;
+  margin-bottom: 24px; }
+
+.information .o-price span {
+  font-weight: bold;
+  font-size: 14px; }
+
+.product-info .timer {
+  width: 306px;
+  height: 66px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 16px; }
+
+.product-info img {
+  margin-top: 12.61px; }
+
+.product-info .timer p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 66px;
+  color: #3d3d3d;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  padding-right: 30px; }
+
+.product-info .auc-prices {
+  margin: 0px;
+  width: 306px;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 24px;
+  margin-bottom: 24px; }
+
+.product-info .auc-prices h6 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #0c5177;
+  margin-bottom: 8px; }
+
+.product-info .auc-prices p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #525252; }
+
+.product-info .auc-prices span {
+  font-size: 12px;
+  line-height: 16px; }
+
+.product-info .current-price {
+  border-left: 1px solid #f1f4f4;
+  padding-left: 16px;
+  padding-right: 17px; }
+
+.product-info .button {
+  background: linear-gradient(88.4deg, #109e00 -0.24%, #14c700 113.01%);
+  border: none;
+  padding: 16px 65px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px; }
+
+.product-info .button a {
+  color: #ffffff;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px; }
+
+@media (max-width: 816px) {
+  .product-info {
+    margin: 0px; }
+  .product-info .info {
+    margin-left: 32px; }
+  .product-info .name h4 {
+    font-size: 20px; }
+  .product-info .items {
+    margin-left: 56px;
+    margin-right: 56px; }
+  .product-info .detail p {
+    font-size: 14px; }
+  .product-info hr {
+    width: 350px; }
+  .product-info .timer p {
+    font-size: 48px;
+    line-height: 56px; }
+  .product-info .auc-prices h6 {
+    font-size: 24px; } }
+
+/*//////Product-info //////////*/
 .similar-products {
   background: #F9F9F9;
   padding-top: 88px;
@@ -521,3 +974,103 @@ a {
       font-size: 8px; }
     .product .old-price {
       font-size: 12px; } }
+
+.auction-details {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #F9F9F9 50%, #fff 50%); }
+  .auction-details .body {
+    display: grid;
+    grid-template-columns: auto 100%;
+    background-color: white; }
+  .auction-details .details {
+    width: 100%;
+    padding-top: 68px;
+    padding-bottom: 148px;
+    background-color: #f9f9f9;
+    padding-right: 30px; }
+    .auction-details .details .back-link {
+      display: inline-block;
+      text-decoration: none;
+      font-family: Manrope, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+      color: #3D3D3D;
+      margin-bottom: 40px; }
+      .auction-details .details .back-link svg {
+        margin-right: 11px; }
+    .auction-details .details .auction-product-details {
+      margin-top: 40px; }
+  .auction-details .auction-form {
+    padding-top: 68px;
+    padding-bottom: 148px;
+    padding-left: 48px; }
+
+main {
+  background: silver;
+  width: 43%;
+  height: 100vh; }
+
+main .clothe {
+  margin: 0;
+  padding-top: 55px;
+  padding-left: 180px; }
+
+main .clothe a {
+  text-decoration: none;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #3D3D3D; }
+
+.fa-angle-left {
+  margin-right: 11px; }
+
+main .container_img {
+  display: grid;
+  width: 300px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 40px 30px 0px 175px; }
+
+.container_img .w3-content {
+  width: 55px;
+  height: 307px; }
+
+.container_img .w3-content img {
+  width: 306px;
+  height: 308px; }
+
+.container_img .w3-center {
+  display: block;
+  width: 69px;
+  height: 307px;
+  background: transparent; }
+
+.container_img .w3-center button {
+  display: block;
+  border: none;
+  outline: none;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 8px;
+  background: none;
+  margin-right: 9px; }
+
+.container_img .w3-center button img {
+  width: 55px;
+  height: 55px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  padding: 0;
+  margin-right: 9px; }
+
+.container_img .active {
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  border-radius: 2px; }

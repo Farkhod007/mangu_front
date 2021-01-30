@@ -4,21 +4,22 @@
 @import 'vendors/normalize',
         'vendors/reset';
 
-@import 'layout/grid';
-        // 'layout/grid';
+@import 'layout/grid',
+        'layout/navbar';
 
 @import 'components/button',
         'components/product-image',
-        // 'components/featured-product-details',
+        'components/auction-product-details',
+        'components/auction-form',
         'components/pagination',
         // 'components/product-description',
         // 'components/product-details-extended',
-        // 'components/product-details',
+        'components/product-details',
         // 'components/product-features',
         'components/similar-products',
         // 'components/similar-products-two',
         'components/product';
 
-@import 'pages/product';
-        // 'pages/auction',
-        // 'pages/details';
+@import 'pages/product',
+        'pages/auction',
+        'pages/details';

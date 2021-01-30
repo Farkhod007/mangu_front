@@ -10,138 +10,129 @@
 
 <body>
     
-    <div class="container">
-        <nav id="nav">
-            <input type="checkbox" id="check">
-            <label for="check">
-                <i class="fas fa-bars" id="btn"></i>
-                <i class="fas fa-times active" id="cancel"></i>
-            </label>
-            <img class="img1" src="../../assets/images/layout/Layer%201%201.png" alt="">
-
-            <ul class="ul">
-                <li class="nav-li active">
-                    <a href="navbar.html">Bosh sahifa</a>
-                </li>
-                <li class="nav-li">
-                    <a href="auction.html">Birjada savdo qilish</a>
-                </li>
-                <li class="nav-li">
-                    <a href="#">Yangiliklar</a>
-                </li>
-                <li class="nav-li">
-                    <a href="#">Loyiha haqida</a>
-                </li>
-                <li class="nav-li">
-                    <a href="#">
-                        <i class="fab fa-telegram-plane"></i>
-                    </a>
-                </li>
-                <li class="nav-li">
-                    <a href="#">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </li>
-            </ul>
+    <div class="navbar">
+        <nav class="container">
+            <div class="body">
+                <div>
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                        <i class="fas fa-bars" id="btn"></i>
+                        <i class="fas fa-times active" id="cancel"></i>
+                    </label>
+                    <img class="logo" src="../../assets/images/layout/Layer%201%201.png" alt="">
+                </div>
+                <ul class="menu">
+                    <li class="item active">
+                        <a href="navbar.html">Bosh sahifa</a>
+                    </li>
+                    <li class="item">
+                        <a href="auction.html">Birjada savdo qilish</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Yangiliklar</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Loyiha haqida</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <!--    navbar ends -->
     </div>
 
-    <main>
-        <p class="clothe">
-            <a href="#">
-                <i class="fa fa-angle-left" style="color: #14C700"></i> 
-                Orqaga qaytish
-            </a>
-        </p>
-
-        <a class="display" href="#">Hafta mahsuloti</a>
-        <div class="container_img">
-            <div class="w3-center">
-                <button class="w3-btn demo" onclick="currentDiv(1)">
-                    <img class="w3-btn demo" src="../../assets/images/product/1.png">
-                </button>
-                <button class="w3-btn demo" onclick="currentDiv(2)">
-                    <img class="w3-btn demo" src="../../assets/images/product/2.png">
-                </button>
-                <button class="w3-btn demo" onclick="currentDiv(3)">
-                    <img class="w3-btn demo" src="../../assets/images/product/3.jpg">
-                </button>
-                <button class="w3-btn demo" onclick="currentDiv(4)">
-                    <img class="w3-btn demo" src="../../assets/images/product/4.jpg">
-                </button>
-                <button class="w3-btn demo" onclick="currentDiv(5)">
-                    <img class="w3-btn demo" src="../../assets/images/product/1.png">
-                </button>
-            </div>
-            <div class="w3-content" style="width:100%;">
-                <img class="mySlides" src="../../assets/images/product/1.png">
-                <img class="mySlides" src="../../assets/images/product/2.png">
-                <img class="mySlides" src="../../assets/images/product/3.jpg">
-                <img class="mySlides" src="../../assets/images/product/4.jpg">
-            </div>
-        </div>
-
-        <div class="product">
-            <div class="text">
-                <h2>Redmi Book 14’’</h2>
-                <p>Redmibook Ryzen 4000 APU o'rnini bosuvchi <br>
-                    10-avlod Intel protsessorlari bilan ishlaydi.</p>
-                <div class="xarakteristika">
-                    <h3>Xarakteristika</h3>
-                    <ul>
-                        <li><span> Processor: 10th generation Intel Core i5</span></li>
-                        <li><span>GPU: NVIDIA ® MX250 2GB GDDR5</span></li>
-                        <li><span>RAM: 2GB GDDR5 + 8GB DDR4</span></li>
-                        <li><span>Display: 14" FHD Full HD screen</span></li>
-                        <li><span>Storage: 256GB SATA SSD storage</span></li>
-                        <li><span>OS system: Windows 10 Home</span></li>
-                    </ul>
+    <main class="auction-details">
+        <div class="container">
+            <div class="body">
+                <div class="details">
+                    <a class="back-link" href="#">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.28033 9.53033C4.98744 9.82322 4.51256 9.82322 4.21967 9.53033L0.21967 5.53033C-0.0732233 5.23744 -0.0732233 4.76256 0.21967 4.46967L4.21967 0.46967C4.51256 0.176777 4.98744 0.176777 5.28033 0.46967C5.57322 0.762563 5.57322 1.23744 5.28033 1.53033L1.81066 5L5.28033 8.46967C5.57322 8.76256 5.57322 9.23744 5.28033 9.53033Z" fill="#14C700"/>
+                        </svg>    
+                        Orqaga qaytish
+                    </a>
+                    <div class="product-image">
+                        <div class="thumbnails">
+                            <img class="thumbnail active" src="../../assets/images/product/1.png">
+                            <img class="thumbnail" src="../../assets/images/product/2.png">
+                            <img class="thumbnail" src="../../assets/images/product/3.jpg">
+                            <img class="thumbnail" src="../../assets/images/product/4.jpg">
+                            <img class="thumbnail" src="../../assets/images/product/4.jpg">
+                        </div>
+                        <div class="big-image">
+                            <img id="big-image" src="../../assets/images/product/1.png">
+                        </div>
+                    </div>
+                    <div class="auction-product-details">
+                        <h2 class="title">Redmi Book 14’’</h2>
+                        <p class="excerpt">Redmibook Ryzen 4000 APU o'rnini bosuvchi <br>
+                            10-avlod Intel protsessorlari bilan ishlaydi.</p>
+                        <div class="features">
+                            <h3 class="title">Xarakteristika</h3>
+                            <ul class="list">
+                                <li class="item">Processor: 10th generation Intel Core i5</li>
+                                <li class="item">GPU: NVIDIA ® MX250 2GB GDDR5</li>
+                                <li class="item">RAM: 2GB GDDR5 + 8GB DDR4</li>
+                                <li class="item">Display: 14" FHD Full HD screen</li>
+                                <li class="item">Storage: 256GB SATA SSD storage</li>
+                                <li class="item">OS system: Windows 10 Home</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a class="action" href="#">Batafsil ma’lumot</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="url"><a href="#"> <a href="#">Batafsil ma’lumot</a></a></div>
+                <div class="auction-form">
+                    <h1 class="title">Auksionda qatnashish</h1>
+                    <table>
+                        <tr>
+                            <th>Mahsulot nomi</th>
+                            <td>Redme Book 14"</td>
+                        </tr>
+                        <tr>
+                            <th>Auksion boshlangan vaqt</th>
+                            <td>10:23,22-sentyabr,2021</td>
+                        </tr>
+                        <tr>
+                            <th>Auksion tugaydigan vaqt</th>
+                            <td>10:23,29-oktyabr,2021</td>
+                        </tr>
+                        <tr>
+                            <th>Mahsulotning asl narxi</th>
+                            <td> 2999 MNG</td>
+                        </tr>
+                        <tr>
+                            <th>Auksiondagi boshlang'ich narxi</th>
+                            <td>312 MNG</td>
+                        </tr>
+                        <tr>
+                            <th>Auksionda berilgan ohirgi narx</th>
+                            <td>469 MNG</td>
+                        </tr>
+                    </table>
+                    <form action="#" method="POST">
+                        <input class="price" name="price" type="text" placeholder="Narxni belgilang" />
+                        <div>
+                            <label for="#agreement">
+                                <input class="checkbox" name="agreement" type="checkbox" id="agreement" /> Men auksion
+                                <a href="">shartlariga</a> roziman
+                            </label>
+                        </div>
+                        <button class="btn btn-primary">Tasdiqlash</button>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
-
-    <div class="container_oclock">
-        <p>Auksionda qatnashish</p>
-        <table>
-            <tr>
-                <td class="a">Mahsulot nomi</td>
-                <td class="b">Redme Book 14"</td>
-            </tr>
-            <tr>
-                <td class="a">Auksion boshlangan vaqt</td>
-                <td class="b">10:23,22-sentyabr,2021</td>
-            </tr>
-            <tr>
-                <td class="a">Auksion tugaydigan vaqt</td>
-                <td class="b">10:23,29-oktyabr,2021</td>
-            </tr>
-            <tr>
-                <td class="a">Mahsulotning asl narxi</td>
-                <td class="b"> 2999 MNG</td>
-            </tr>
-            <tr>
-                <td class="a">Auksiondagi boshlang'ich narxi</td>
-                <td class="b">312 MNG</td>
-            </tr>
-            <tr>
-                <td class="a">Auksionda berilgan ohirgi narx</td>
-                <td class="b">469 MNG</td>
-            </tr>
-        </table>
-        <form>
-            <input class="placeholder" type="text" placeholder="Narxni belgilang" /><br />
-            <div>
-                <label for="">
-                    <input class="checkbox" type="checkbox" name="" id="" /> Men auksion
-                    <a href="">shartlariga</a> roziman
-                </label>
-            </div>
-            <button class="btn btn-secondary">Tasdiqlash</button>
-        </form>
-    </div>
     
     <script src="../../assets/js/main.js"></script>
 
