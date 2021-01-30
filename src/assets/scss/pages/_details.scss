@@ -1,46 +1,76 @@
-/*///////////////////////////////
-//////// Prod start
-//////////////////////////////*/
-.prod {
-  display: flex;
+main {
+    background: silver;
+    width: 43%;
+    height: 100vh;
 }
-.prod .item-1 img {
-  display: block;
-  margin-top: 8px;
-  margin-bottom: 8px;
+
+main .clothe {
+    margin: 0;
+    padding-top: 55px;
+    padding-left: 180px;
+
 }
-.item-1 .active {
-  border: 1px solid #a3a3a3;
-  width: 48px;
-  height: 48px;
+main .clothe a{
+    text-decoration: none;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #3D3D3D;
 }
-.prod .item-2 {
-  margin-left: 8px;
+.fa-angle-left {
+    margin-right: 11px;
 }
-@media (max-width: 816px) {
-  .prod {
+
+main .container_img {
     display: grid;
-    grid-template-rows: auto auto;
-  }
-  .item-1 {
-    margin: auto;
-    grid-row: 2 / 3;
-  }
-  .prod .item-1 img {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    display: inline;
-  }
-  .item-1 .active {
-    border: 1px solid #a3a3a3;
-    width: 48px;
-    height: 48px;
-  }
-  .prod .item-2 {
-    margin: auto;
-    grid-row: 1 / 1;
-  }
+    width: 300px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 40px 30px 0px 175px;
+
 }
-/*///////////////////////////////
-//////// Prod start
-//////////////////////////////*/
+
+.container_img .w3-content {
+    width: 55px;
+    height: 307px;
+}
+
+.container_img .w3-content img {
+    width: 306px;
+    height: 308px;
+}
+
+.container_img .w3-center {
+    display: block;
+    width: 69px;
+    height: 307px;
+    background: transparent;
+}
+
+.container_img .w3-center button {
+    display: block;
+    border: none;
+    outline: none;
+    width: 55px;
+    height: 55px;
+    margin-bottom: 8px;
+    background: none;
+    margin-right: 9px;
+}
+
+.container_img .w3-center button img {
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    padding: 0;
+    margin-right: 9px;
+}
+
+.container_img .active {
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
