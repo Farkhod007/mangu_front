@@ -19,3 +19,15 @@
 .similar-products .pagination {
     margin-top: 66px;
 }
+
+@media (max-width: 1200px) {
+    .similar-products .products {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 992px) {
+    .similar-products .products {
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -77,3 +77,32 @@
     color: #A3A3A3;
     -moz-text-decoration-line: line-through;
 }
+
+@media (max-width: 576px) {
+    .product {
+        max-width: none;
+    }
+
+    .product .details {
+        padding: 8px 8px 16px 8px;
+    }
+
+    .product .info {
+        font-size: 12px;
+        line-height: 16px;
+        height: 32px;
+        max-height: 32px;
+    }
+
+    .product .price {
+        font-size: 22px;
+    }
+    
+    .product .price sup {
+        font-size: 8px;
+    }
+
+    .product .old-price {
+        font-size: 12px;
+    }
+}
