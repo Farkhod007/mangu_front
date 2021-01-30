@@ -1,7 +1,13 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 section, article, main, nav, details, summary, aside, header, footer {
     display: block;
+}
+
+a {
+    text-decoration: none;
 }
