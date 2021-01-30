@@ -4,6 +4,11 @@
     "Roboto"
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+{
+    "Monrope"
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,15 +19,14 @@
 
 .green-box {
     width: 370px;
-    height: 338px;
     background: linear-gradient(88.4deg, #109E00 -0.24%, #14C700 113.01%);
     border-radius: 8px;
     padding: 32px;
 }
 
-.first {}
+.green-box .first {}
 
-.first .second {
+.green-box .first .second {
     font-family: "Manrope";
     font-style: normal;
     font-weight: 600;
@@ -31,7 +35,7 @@
     color: #ffffff;
 }
 
-.price {
+.green-box .price {
     font-family: Manrope;
     font-style: normal;
     font-weight: bold;
@@ -41,13 +45,13 @@
     margin-left: 8px;
 }
 
-.thirt {
+.green-box .thirt {
     display: flex;
     margin-top: 16px;
     margin-left: 7px;
 }
 
-.fourth {
+.green-box .fourth {
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
@@ -60,11 +64,11 @@
     text-transform: uppercase;
 }
 
-.thirt img {
+.green-box .thirt img {
     display: block;
 }
 
-.first hr {
+.green-box .first hr {
     mix-blend-mode: overlay;
     opacity: 0.2;
     margin-top: 16px;
@@ -72,15 +76,15 @@
     height: 1px;
 }
 
-.sixth {}
+.green-box .sixth {}
 
-.seventh {
+.green-box .seventh {
     display: flex;
     justify-content: space-between;
     margin-top: 24px;
 }
 
-.sixth h3 {
+.green-box .sixth h3 {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -89,7 +93,7 @@
     color: #FFFFFF;
 }
 
-.sixth h3 span {
+.green-box .sixth span {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -98,7 +102,7 @@
     color: #FFFFFF;
 }
 
-.sixth p {
+.green-box .sixth p {
     font-family: Manrope;
     font-style: normal;
     font-weight: 600;
@@ -109,7 +113,6 @@
 
 .green-box button {
     width: 306px;
-    height: 56px;
     color: #14C700;
     padding: 16px 65px;
     background: #FFFFFF;
@@ -122,4 +125,28 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.2px;
+}
+
+@media(max-width:816px) {
+    .green-box {
+        left: 0px;
+        padding: 24px;
+    }
+    .green-box .second {
+        font-weight: 500;
+    }
+    .green-box .fourth {
+        left: 40px;
+        Size: 48px;
+        Line height: 56px;
+    }
+    .green-box img {
+        left: 0.78%;
+        right: 0.78%;
+        top: 1.14%;
+        bottom: 1.39%;
+    }
+    .green-box .sixth p {
+        font-weight: 500;
+    }
 }
