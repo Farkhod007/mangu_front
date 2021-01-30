@@ -1,8 +1,15 @@
+@import "https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Open+Sans&family=Roboto&display=swap";
+
 @import "vendors/normalize.css";
 
 @import "layout/navbar.css";
 
 @import "components/button.css";
+@import "components/featured-product-details.css";
+@import "components/pagination.css";
+@import "components/product-description.css";
+@import "components/product-details-extended.css";
+@import "components/product-details.css";
 
 @import "pages/auction.css";
 @import "pages/product.css";
