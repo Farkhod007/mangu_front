@@ -3,7 +3,6 @@
 :root {
     font-family: "Manrope", "Roboto";
 }
-
 /*nav starts*/
 nav {
     background: rgba(33, 33, 33, 1);
@@ -165,7 +164,6 @@ label #cancel {
     nav ul li {
         display: block !important;
         line-height: 30px;
-        padding-right: 24px;
         padding-right: 32px;
     }
 
@@ -207,13 +205,6 @@ label #cancel {
     #check:checked ~ ul {
         left: 0;
     }
-
-    #check:checked ~ nav .img1 {
-        background: rgba(33, 33, 33, 1) !important;
-        display: none;
-    }
-
-
     #check:checked ~ label #btn {
         display: none;
     }
