@@ -1,21 +1,14 @@
-.pagin-block{
-height: 68px;
-width: 378px;
-border-radius: 4px;
-padding: 10px;
-display: flex;
-align-items: center;
-justify-content: start;
+.pagination {
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
 
-}
-.btn-pagin{
-    margin-right: 16px;
-}
-.btn-pagin:last-child{
-    margin-right: 0;
-}
 @media screen and (max-width:816px){
-    .pagin-block{
+    .pagin-block {
         width: 350px;
         height: auto;
         padding: 0;
