@@ -9,17 +9,17 @@
 
 @import 'components/button',
         'components/product-image',
-        'components/auction-product-details',
+        'components/product-text',
         'components/auction-form',
         'components/pagination',
         // 'components/product-description',
         // 'components/product-details-extended',
-        'components/product-details',
+        'components/product-info',
         // 'components/product-features',
         'components/similar-products',
+        'components/featured-product',
         // 'components/similar-products-two',
         'components/product';
 
 @import 'pages/product',
-        'pages/auction',
-        'pages/details';
+        'pages/auction';

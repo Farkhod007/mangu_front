@@ -5,7 +5,7 @@
 
     .body {
         display: grid;
-        grid-template-columns: auto 100%;
+        grid-template-columns: 399px auto;
         background-color: white;
     }
 
@@ -35,6 +35,8 @@
 
         .auction-product-details {
             margin-top: 40px;
+            width: 100%;
+            max-width: 369px;
         }
     }
 
@@ -42,5 +44,73 @@
         padding-top: 68px;
         padding-bottom: 148px;
         padding-left: 48px;
+    }
+}
+
+@media (max-width: 992px) {
+    .auction-details {
+        background: none;
+    
+        .body {
+            grid-template-columns: auto;
+        }
+    
+        .details {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-right: 0;
+    
+            .back-link   {
+                display: inline-block;
+                text-decoration: none;
+                font-family: Manrope, sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: #3D3D3D;
+                margin-bottom: 40px;
+    
+                svg {
+                    margin-right: 11px;
+                }
+            }
+    
+            .auction-product-details {
+                margin-top: 40px;
+                max-width: 100%;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: calc((100vw - 100% ) / -2);
+                width: 100vw;
+                height: 1000px;
+                background-color: #f9f9f9;
+                z-index: -1;
+            }
+        }
+    
+        .auction-form {
+            position: relative;
+            background-color: #fff;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 0;
+
+            &::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: calc((100vw - 100% ) / -2);
+                width: 100vw;
+                height: 100%;
+                background-color: #fff;
+                z-index: -1;
+            }
+        }
     }
 }
