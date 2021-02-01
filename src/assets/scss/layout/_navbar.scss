@@ -24,7 +24,7 @@
         align-items: center;
         gap: 32px;
 
-        svg {
+        > svg {
             display: none;
         }
 
@@ -46,6 +46,28 @@
     
                 a {
                     color: #14C700;
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            justify-content: flex-end;
+            margin-left: 40px;
+
+            li {
+                display: block;
+
+                svg {
+                    height: 16px;
+                    width: auto;
+                    margin-bottom: 0;
+                }
+
+                svg path {
+                    fill: #fff;
                 }
             }
         }
@@ -107,24 +129,19 @@
                     }
                 }
 
-                &:nth-last-child(1), &:nth-last-child(2) {
-                    display: inline-block;
-                    margin-top: 35px;
+                &:nth-last-child(2) {
                     padding-bottom: 0;
                 }
+            }
 
-                &:nth-last-child(2) {
-                    margin-right: 24px;
-                }
+            ul {
+                margin-left: 0;
+                margin-top: 32px;
 
-                svg {
-                    height: 15.75px;
-                    width: auto;
-                    margin-bottom: 0;
-                }
-
-                svg path {
-                    fill: #3D3D3D;
+                li {
+                    svg path {
+                        fill: #3D3D3D;
+                    }
                 }
             }
 

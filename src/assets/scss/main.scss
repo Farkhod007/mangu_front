@@ -1,5 +1,5 @@
 
-@import 'https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Open+Sans&family=Roboto&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&family=Open+Sans&family=Roboto:wght@300;400;500;600;700&display=swap';
 
 @import 'vendors/normalize',
         'vendors/reset';
@@ -11,15 +11,14 @@
         'components/product-image',
         'components/product-text',
         'components/auction-form',
+        'components/auction-card',
         'components/pagination',
-        // 'components/product-description',
-        // 'components/product-details-extended',
+        'components/product-description',
         'components/product-info',
-        // 'components/product-features',
+        'components/product-features',
         'components/similar-products',
         'components/featured-product',
-        // 'components/similar-products-two',
         'components/product';
 
-@import 'pages/product',
+@import 'pages/details',
         'pages/auction';

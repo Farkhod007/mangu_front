@@ -19,3 +19,21 @@
         grid-column-gap: 44px;
     }
 }
+
+@media (max-width: 1200px) {
+    .featured-product {
+        .content {
+            grid-template-columns: auto auto;
+            grid-row-gap: 44px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .featured-product {
+        .content {
+            grid-template-columns: auto;
+            grid-row-gap: 32px;
+        }
+    }
+}

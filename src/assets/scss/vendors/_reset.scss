@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+*:focus {
+    outline: none;
+}
+
 section, article, main, nav, details, summary, aside, header, footer {
     display: block;
 }

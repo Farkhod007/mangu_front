@@ -25,21 +25,29 @@
 .btn-secondary {
   padding: 16px 24px;
   background-color: white;
-  color: linear-gradient(88.4deg, #109E00 -0.24%, #14C700 113.01%);
+  color: #14C700;
 }
 
 .btn-pagin {
+  
   padding: 12px 20px;
   background: #ffffff;
   border: 1px solid #f1f4f4;
   border-radius: 2px;
   color: #666666;
   transition: background 0.4s ease;
+
+  &.disabled svg path {
+    fill: #E0E0E0;
+    cursor: not-allowed;
+  }
+
+  &:hover,
+  &:focus,
+  &.active {
+    background-color: #0c5177;
+    color: white;
+  }
 }
 
-.btn-pagin:hover,
-.btn-pagin:focus,
-.btn-pagein.active {
-  background-color: #0c5177;
-  color: white;
-}
+

@@ -1,163 +1,143 @@
-
 .product-info {
-  margin-left: 81px;
-}
+  max-width: 306px;
+  .name {
+    h4 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 32px;
+      color: #212121;
+      letter-spacing: 0.2px;
+    }
+  }
 
-.product-info .name h4 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 32px;
-  color: #212121;
-  letter-spacing: 0.2px;
-}
+  .detail {
+    p {
+      font-family: "Manrope";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+      color: #3d3d3d;
+      margin-top: 16px;
+      margin-bottom: 24px;
+    }
+  }
 
-.product-info .detail p {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.1px;
-  color: #3d3d3d;
-  margin-top: 16px;
-  margin-bottom: 24px;
-}
+  hr {
+    border-color: #F1F4F4;
+    height: 0;
+    margin-left: 0px;
+  }
 
-.product-info hr {
-  color: #f1f4f4;
-  width: 306px;
-  margin-left: 0px;
-}
+  .o-price {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #3d3d3d;
+    margin-top: 24px;
+    margin-bottom: 24px;
 
-.product-info .o-price {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.2px;
-  color: #3d3d3d;
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
+    span {
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
 
-.information .o-price span {
-  font-weight: bold;
-  font-size: 14px;
-}
+  .time-box {
+    display: flex;
+    align-items: center;
 
-.product-info .timer {
-  width: 306px;
-  height: 66px;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 16px;
-}
+    svg {
+      width: auto;
+      height: 48px;
+    }
+  }
 
-.product-info img {
-  margin-top: 12.61px;
-}
+  .timer {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 66px;
+    color: #3d3d3d;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    margin-left: 16px;
+  }
 
-.product-info .timer p {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 56px;
-  line-height: 66px;
-  color: #3d3d3d;
-  letter-spacing: 0.2px;
-  text-transform: uppercase;
-  padding-right: 30px;
-}
-
-.product-info .auc-prices {
-  margin: 0px;
-  width: 306px;
-  display: grid;
-  grid-template-columns: auto auto;
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-
-.product-info .auc-prices h6 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 32px;
-  text-transform: uppercase;
-  color: #0c5177;
-  margin-bottom: 8px;
-}
-
-.product-info .auc-prices p {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.2px;
-  color: #525252;
-}
-
-.product-info .auc-prices span {
-  font-size: 12px;
-  line-height: 16px;
-}
-
-.product-info .current-price {
-  border-left: 1px solid #f1f4f4;
-  padding-left: 16px;
-  padding-right: 17px;
-}
-
-.product-info .button {
-  background: linear-gradient(88.4deg, #109e00 -0.24%, #14c700 113.01%);
-  border: none;
-  padding: 16px 65px;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.product-info .button a {
-  color: #ffffff;
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-}
-
-@media (max-width: 816px) {
-  .product-info {
+  .auc-prices {
     margin: 0px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    h6 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 32px;
+      text-transform: uppercase;
+      color: #0c5177;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-family: "Manrope";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.2px;
+      color: #525252;
+    }
+
+    span {
+      font-size: 12px;
+      line-height: 16px;
+    }
   }
-  .product-info .info {
-    margin-left: 32px;
+
+  .current-price {
+    border-left: 1px solid #f1f4f4;
+    padding-left: 16px;
+    padding-right: 17px;
   }
-  .product-info .name h4 {
-    font-size: 20px;
-  }
-  .product-info .items {
-    margin-left: 56px;
-    margin-right: 56px;
-  }
-  .product-info .detail p {
-    font-size: 14px;
-  }
-  .product-info hr {
-    width: 350px;
-  }
-  .product-info .timer p {
-    font-size: 48px;
-    line-height: 56px;
-  }
-  .product-info .auc-prices h6 {
-    font-size: 24px;
+}
+
+@media (max-width: 992px) {
+  .product-info {
+    max-width: 100%;
+    margin: 0px;
+
+    .name {
+      h4 {
+        font-size: 20px;
+      }
+    }
+
+    .detail {
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .timer {
+      font-size: 48px;
+      line-height: 56px;
+    }
+
+    .auc-prices {
+      h6 {
+        font-size: 24px;
+      }
+    }
   }
 }

@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Open+Sans&family=Roboto&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&family=Open+Sans&family=Roboto:wght@300;400;500;600;700&display=swap';
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -309,6 +309,9 @@ template {
   margin: 0;
   padding: 0; }
 
+*:focus {
+  outline: none; }
+
 section, article, main, nav, details, summary, aside, header, footer {
   display: block; }
 
@@ -353,7 +356,7 @@ ul {
     display: flex;
     align-items: center;
     gap: 32px; }
-    .navbar .menu svg {
+    .navbar .menu > svg {
       display: none; }
     .navbar .menu .item {
       padding-top: 20px;
@@ -369,6 +372,20 @@ ul {
         border-bottom: 2px solid #14C700; }
         .navbar .menu .item.active a {
           color: #14C700; }
+    .navbar .menu ul {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      justify-content: flex-end;
+      margin-left: 40px; }
+      .navbar .menu ul li {
+        display: block; }
+        .navbar .menu ul li svg {
+          height: 16px;
+          width: auto;
+          margin-bottom: 0; }
+        .navbar .menu ul li svg path {
+          fill: #fff; }
 
 @media (max-width: 992px) {
   .navbar .body .brand {
@@ -409,17 +426,12 @@ ul {
         border-bottom: none; }
         .navbar .menu .item.active a {
           color: #14C700; }
-      .navbar .menu .item:nth-last-child(1), .navbar .menu .item:nth-last-child(2) {
-        display: inline-block;
-        margin-top: 35px;
-        padding-bottom: 0; }
       .navbar .menu .item:nth-last-child(2) {
-        margin-right: 24px; }
-      .navbar .menu .item svg {
-        height: 15.75px;
-        width: auto;
-        margin-bottom: 0; }
-      .navbar .menu .item svg path {
+        padding-bottom: 0; }
+    .navbar .menu ul {
+      margin-left: 0;
+      margin-top: 32px; }
+      .navbar .menu ul li svg path {
         fill: #3D3D3D; }
     .navbar .menu::after {
       position: absolute;
@@ -455,7 +467,7 @@ ul {
 .btn-secondary {
   padding: 16px 24px;
   background-color: white;
-  color: linear-gradient(88.4deg, #109E00 -0.24%, #14C700 113.01%); }
+  color: #14C700; }
 
 .btn-pagin {
   padding: 12px 20px;
@@ -464,12 +476,12 @@ ul {
   border-radius: 2px;
   color: #666666;
   transition: background 0.4s ease; }
-
-.btn-pagin:hover,
-.btn-pagin:focus,
-.btn-pagein.active {
-  background-color: #0c5177;
-  color: white; }
+  .btn-pagin.disabled svg path {
+    fill: #E0E0E0;
+    cursor: not-allowed; }
+  .btn-pagin:hover, .btn-pagin:focus, .btn-pagin.active {
+    background-color: #0c5177;
+    color: white; }
 
 .product-image {
   display: grid;
@@ -691,6 +703,103 @@ ul {
   .auction-form form .btn-primary {
     max-width: 100%; } }
 
+.auction-card {
+  width: 100%;
+  background: linear-gradient(88.4deg, #109E00 -0.24%, #14C700 113.01%);
+  border-radius: 8px;
+  padding: 32px; }
+  .auction-card .first .second {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #ffffff; }
+  .auction-card .first hr {
+    mix-blend-mode: overlay;
+    opacity: 0.2;
+    margin-top: 16px;
+    color: #ffffff;
+    height: 1px; }
+  .auction-card .price {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    margin-left: 8px; }
+  .auction-card .thirt {
+    display: flex;
+    align-items: center;
+    margin-top: 16px; }
+    .auction-card .thirt svg {
+      width: auto;
+      height: 50px; }
+  .auction-card .timer {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 66px;
+    color: #ffffff;
+    margin-left: 15px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase; }
+  .auction-card .sixth h3 {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    color: #FFFFFF; }
+  .auction-card .sixth span {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 32px;
+    color: #FFFFFF; }
+  .auction-card .sixth p {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF; }
+  .auction-card .seventh {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px; }
+  .auction-card .btn-secondary {
+    margin-top: 24px;
+    width: 100%; }
+
+@media (max-width: 992px) {
+  .auction-card {
+    left: 0px;
+    padding: 24px; }
+    .auction-card .second {
+      font-weight: 500; }
+    .auction-card .timer {
+      size: 48px;
+      line-height: 56px; }
+    .auction-card .thirt {
+      display: flex;
+      margin-top: 16px;
+      margin-left: 0px; }
+    .auction-card .sixth p {
+      font-weight: 500; }
+    .auction-card .sixth h3 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 16px; }
+    .auction-card .sixth span {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 16px; } }
+
 .pagination {
   border-radius: 4px;
   padding: 10px;
@@ -705,143 +814,154 @@ ul {
     height: auto;
     padding: 0; } }
 
-.product-auction {
-  margin-left: 81px; }
-
-.product-auction .name h4 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 32px;
-  color: #212121;
-  letter-spacing: 0.2px; }
-
-.product-auction .detail p {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 500;
+.product-description p {
+  font-family: 'Manrope',sans-serif;
   font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.1px;
-  color: #3d3d3d;
-  margin-top: 16px;
-  margin-bottom: 24px; }
-
-.product-auction hr {
-  color: #f1f4f4;
-  width: 306px;
-  margin-left: 0px; }
-
-.product-auction .o-price {
-  font-family: "Manrope";
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.2px;
-  color: #3d3d3d;
-  margin-top: 24px;
-  margin-bottom: 24px; }
-
-.information .o-price span {
-  font-weight: bold;
-  font-size: 14px; }
-
-.product-auction .timer {
-  width: 306px;
-  height: 66px;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 16px; }
-
-.product-auction img {
-  margin-top: 12.61px; }
-
-.product-auction .timer p {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 56px;
-  line-height: 66px;
-  color: #3d3d3d;
-  letter-spacing: 0.2px;
-  text-transform: uppercase;
-  padding-right: 30px; }
-
-.product-auction .auc-prices {
-  margin: 0px;
-  width: 306px;
-  display: grid;
-  grid-template-columns: auto auto;
-  margin-top: 24px;
-  margin-bottom: 24px; }
-
-.product-auction .auc-prices h6 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 32px;
-  text-transform: uppercase;
-  color: #0c5177;
-  margin-bottom: 8px; }
-
-.product-auction .auc-prices p {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.2px;
-  color: #525252; }
-
-.product-auction .auc-prices span {
-  font-size: 12px;
-  line-height: 16px; }
-
-.product-auction .current-price {
-  border-left: 1px solid #f1f4f4;
-  padding-left: 16px;
-  padding-right: 17px; }
-
-.product-auction .button {
-  background: linear-gradient(88.4deg, #109e00 -0.24%, #14c700 113.01%);
-  border: none;
-  padding: 16px 65px;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 4px; }
-
-.product-auction .button a {
-  color: #ffffff;
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.2px; }
+  margin-bottom: 24px; }
 
-@media (max-width: 816px) {
-  .product-auction {
+.product-info {
+  max-width: 306px; }
+  .product-info .name h4 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    color: #212121;
+    letter-spacing: 0.2px; }
+  .product-info .detail p {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #3d3d3d;
+    margin-top: 16px;
+    margin-bottom: 24px; }
+  .product-info hr {
+    border-color: #F1F4F4;
+    height: 0;
+    margin-left: 0px; }
+  .product-info .o-price {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #3d3d3d;
+    margin-top: 24px;
+    margin-bottom: 24px; }
+    .product-info .o-price span {
+      font-weight: bold;
+      font-size: 14px; }
+  .product-info .time-box {
+    display: flex;
+    align-items: center; }
+    .product-info .time-box svg {
+      width: auto;
+      height: 48px; }
+  .product-info .timer {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 66px;
+    color: #3d3d3d;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    margin-left: 16px; }
+  .product-info .auc-prices {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 24px;
+    margin-bottom: 24px; }
+    .product-info .auc-prices h6 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 32px;
+      text-transform: uppercase;
+      color: #0c5177;
+      margin-bottom: 8px; }
+    .product-info .auc-prices p {
+      font-family: "Manrope";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.2px;
+      color: #525252; }
+    .product-info .auc-prices span {
+      font-size: 12px;
+      line-height: 16px; }
+  .product-info .current-price {
+    border-left: 1px solid #f1f4f4;
+    padding-left: 16px;
+    padding-right: 17px; }
+
+@media (max-width: 992px) {
+  .product-info {
+    max-width: 100%;
     margin: 0px; }
-  .product-auction .info {
-    margin-left: 32px; }
-  .product-auction .name h4 {
-    font-size: 20px; }
-  .product-auction .items {
-    margin-left: 56px;
-    margin-right: 56px; }
-  .product-auction .detail p {
-    font-size: 14px; }
-  .product-auction hr {
-    width: 350px; }
-  .product-auction .timer p {
-    font-size: 48px;
-    line-height: 56px; }
-  .product-auction .auc-prices h6 {
-    font-size: 24px; } }
+    .product-info .name h4 {
+      font-size: 20px; }
+    .product-info .detail p {
+      font-size: 14px; }
+    .product-info .timer {
+      font-size: 48px;
+      line-height: 56px; }
+    .product-info .auc-prices h6 {
+      font-size: 24px; } }
+
+.product-features {
+  width: 100%; }
+  .product-features ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 16px 24px; }
+    .product-features ul li {
+      font-family: Manrope;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: black; }
+  .product-features .grey {
+    background-color: #F9F9F9; }
+    .product-features .grey li {
+      font-family: Manrope;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: black; }
+
+@media (max-width: 992px) {
+  .product-features {
+    width: auto; }
+    .product-features ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 16px 24px; }
+      .product-features ul li {
+        font-family: Manrope;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: black; }
+    .product-features .grey {
+      background-color: #F9F9F9; }
+      .product-features .grey li {
+        font-family: Manrope;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: black; } }
 
 .similar-products {
   background: #F9F9F9;
@@ -851,10 +971,10 @@ ul {
     display: flex;
     justify-content: space-between;
     margin-bottom: 56px; }
-    .similar-products .header h2 {
+    .similar-products .header .title {
       font-family: Roboto, sans-serif;
       font-style: normal;
-      font-weight: bold;
+      font-weight: 700;
       font-size: 26px;
       line-height: 32px;
       letter-spacing: 0.2px;
@@ -906,9 +1026,18 @@ ul {
     grid-template-columns: auto auto auto;
     grid-column-gap: 44px; }
 
+@media (max-width: 1200px) {
+  .featured-product .content {
+    grid-template-columns: auto auto;
+    grid-row-gap: 44px; } }
+
+@media (max-width: 992px) {
+  .featured-product .content {
+    grid-template-columns: auto;
+    grid-row-gap: 32px; } }
+
 .product {
   display: block;
-  width: 100%;
   border-radius: 4px;
   background-color: #fff;
   border-radius: 4px;
@@ -997,6 +1126,86 @@ ul {
     .product .old-price {
       font-size: 12px; } }
 
+.details-header {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  background-color: #F9F9F9; }
+  .details-header .back-link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: Manrope, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #3D3D3D;
+    margin-bottom: 40px; }
+    .details-header .back-link svg {
+      margin-right: 11px; }
+  .details-header .content {
+    display: flex;
+    gap: 80px; }
+  .details-header .btn-primary {
+    width: 100%; }
+
+.details-features {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  .details-features .title {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    letter-spacing: 0.2px;
+    color: #212121;
+    margin-bottom: 56px; }
+  .details-features .content {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-column-gap: 30px; }
+
+.products-slider {
+  background-color: #F9F9F9;
+  padding-top: 87px;
+  padding-bottom: 206px; }
+  .products-slider .similar-products .container {
+    overflow: hidden; }
+  .products-slider .similar-products .btn-pagin:hover, .products-slider .similar-products .btn-pagin:active, .products-slider .similar-products .btn-pagin:focus {
+    background-color: #fff; }
+  .products-slider .similar-products .navigator {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px; }
+  .products-slider .similar-products .products {
+    position: relative;
+    left: 0;
+    display: inline-flex;
+    grid-column-gap: 0;
+    transition: all 1s ease; }
+
+@media (max-width: 992px) {
+  .details-header {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    .details-header .content {
+      display: block; }
+      .details-header .content .product-info {
+        margin-top: 32px; }
+  .details-features {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    .details-features .title {
+      font-size: 20px; }
+    .details-features .content {
+      grid-template-columns: auto;
+      grid-column-gap: 0; }
+      .details-features .content .product-description {
+        margin-top: 32px; }
+  .products-slider {
+    padding-top: 40px;
+    padding-bottom: 56px; } }
+
 .auction-details {
   width: 100%;
   height: 100%;
@@ -1028,6 +1237,8 @@ ul {
       margin-top: 40px;
       width: 100%;
       max-width: 369px; }
+    .auction-details .details .product-text {
+      margin-top: 40px; }
   .auction-details .auction-form {
     padding-top: 68px;
     padding-bottom: 148px;
@@ -1067,6 +1278,8 @@ ul {
         height: 1000px;
         background-color: #f9f9f9;
         z-index: -1; }
+      .auction-details .details .product-text {
+        margin-top: 32px; }
     .auction-details .auction-form {
       position: relative;
       background-color: #fff;
