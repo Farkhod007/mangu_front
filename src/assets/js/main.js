@@ -42,7 +42,7 @@ timer = setInterval(() => {
 }, 1000);
 
 // Products Slider
-let sliderParentStyle, sliderParentWidth, prevMax, nextMax, left,
+let sliderParentStyle, sliderParentWidth, prevMax, nextMax, prevIndex, nextIndex, left,
     slider = document.getElementById("slider"),
     prevBtn = document.getElementById("prev-slide"),
     nextBtn = document.getElementById("next-slide"),
